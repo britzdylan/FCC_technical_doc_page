@@ -1,0 +1,41 @@
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+}
+
+@media (max-width: 1920px) {
+  h1 {
+    padding: 0;
+    margin: 20px 20px 20px 0;
+  }
+  #container {
+    height: 100vh;
+    display: flex;
+  }
+  
+  #navbar {
+    padding: 0 10px 0 10px;
+    border-right: 2px solid black;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+  }
+  
+  #main-doc {
+    margin: 0 0 0 30%;
+    padding: 50px 20px 50px 20px;
+    width: 70%;
+    
+  }
+  .nav-link {
+    font-size: 17px;
+    display: block;
+    line-height: 2.5;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 900px) {
+  
+}
