@@ -2,8 +2,28 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 15px;
 }
+#Reference {
+    margin: 0 0 50px 0;
+}
 
-@media (max-width: 1920px) {
+code {
+    display: block;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 10px 0 10px 30px;
+}
+
+p {
+    margin: 20px;
+}
+
+.nav-link:hover,
+.nav-link:active{
+    color: black;
+    font-weight: 600;
+}
+
+@media (min-width: 960px) {
   h1 {
     padding: 0;
     margin: 20px 20px 20px 0;
@@ -11,6 +31,7 @@ body {
   #container {
     height: 100vh;
     display: flex;
+    margin: 0 0 100px 0; 
   }
   
   #navbar {
@@ -23,7 +44,7 @@ body {
   }
   
   #main-doc {
-    margin: 0 0 0 30%;
+    margin: 0 0 10% 30%;
     padding: 50px 20px 50px 20px;
     width: 70%;
     
@@ -33,9 +54,47 @@ body {
     display: block;
     line-height: 2.5;
     border-bottom: 1px solid black;
+    color: gray;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 960px) {
+ #container {
+     padding: 0;
+     margin: 0;
+  }
+    
+#responsive-menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10px;
+    background-color: white;
+    margin: 0;
+    padding: 0 0 20px 0;
+    top: 0;
+    border-bottom: 1px solid grey;
+    
+  }
+#main-doc {
+    margin: 300px 0 10% 0;
+    padding: 20px auto ;
+    width: 100%;
+    
+  }
+
+.topnav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    width: 100%;
+    background-color: white;;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid grey;
+    }
+  
   
 }
+
+
